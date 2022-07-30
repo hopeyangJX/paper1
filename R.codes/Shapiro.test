@@ -1,0 +1,6 @@
+mydata<-read.csv("2019-pearson.csv",header = TRUE)
+head(mydata)
+x<-mydata[,5]
+shapiro.test(x)
+bartlett.test(mydata$B.sobs~mydata$Factor)
+fligner.test(mydata$F.sobs~mydata$Factor)

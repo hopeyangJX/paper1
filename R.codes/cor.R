@@ -1,0 +1,5 @@
+fit1<-read.csv("Fungidata-N-.csv",header = TRUE)
+attach(fit1)
+head(fit1)
+fit2<-lm(PATshannon ~Nlevel)
+summary(fit2)
